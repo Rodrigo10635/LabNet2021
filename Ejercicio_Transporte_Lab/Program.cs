@@ -26,22 +26,22 @@ namespace Ejercicio_Transporte_Lab
                 new Automovil(6)
             };
 
-            int loopAvion = 0;
-            int loopAuto = 0;
+            int Cantidad_Avion = 0;
+            int Cantidad_Auto = 0;
 
             foreach (var item in transportes)
             {
 
                 if (item.GetType().Name.ToString() == "Avion")
                 {
-                    loopAvion++;
-                    Console.WriteLine("Avion {0}: " + item.Obtener_Pasajeros,loopAvion);
+                    Cantidad_Avion++;
+                    Console.WriteLine("Avion {0}: " + item.Obtener_Pasajeros + " pasajeros",Cantidad_Avion);
                                         
                 }
                 else
                 {
-                    loopAuto++;
-                    Console.WriteLine("Automovil {0}: " + item.Obtener_Pasajeros, loopAuto);
+                    Cantidad_Auto++;
+                    Console.WriteLine("Automovil {0}: " + item.Obtener_Pasajeros + " pasajeros", Cantidad_Auto);
                 }
                 
             }
