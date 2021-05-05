@@ -1,0 +1,28 @@
+#nombre {
+    
+    border-radius: 20px;
+    
+}
+
+#apellido {
+
+    border-radius:  20px;
+}
+
+
+
+form {
+    
+    background-color: gray;
+    
+    font-style:italic;
+    color:white
+    
+}
+
+
+#enviar {
+  
+background-color:cornflowerblue;
+
+}

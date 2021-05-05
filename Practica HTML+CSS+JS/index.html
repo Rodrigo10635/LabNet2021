@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos.css">
+
+    <title>Formulario</title>
+    <style>
+        #edad {
+            width: 120px;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>CONTACTO</h1>
+    <h4>Completa tus datos.</h4>
+    <form style="width: 300;" action="">
+        <fieldset>
+            <legend>Información Personal:</legend>
+
+
+
+            <label for="">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre"><br><br>
+
+            <label for="">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido"><br><br>
+
+            <label for="">Edad: </label><br>
+            <input type="text" id="edad" name="edad" placeholder="Ingrese su edad"><br><br>
+            <input type="radio" >
+
+            <label for="male">Masculino</label><br>
+            <input type="radio" >
+
+            <label for="female">Femenino</label><br>
+            <input type="radio">
+            <label for="other">Otro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información Adicional:</legend>
+            <label for="">Empresa</label><br>
+            <input type="text" id="empresa" name="empresa" placeholder="Ingrese su empresa"><br>
+        </fieldset>
+        <br>
+
+        <button type="button" id="enviar">Submit</button>
+        <button type="button" id="limpiar">Limpiar</button>
+
+    </form>
+
+
+    <script src="./programacion.js"></script>
+</body>
+
+</html>
