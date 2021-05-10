@@ -1,0 +1,19 @@
+﻿@model Practica_EF.MVC.Models.CustomersView
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h1>Vista para Actualizar</h1>
+
+@using (Html.BeginForm("Update", "Customers", FormMethod.Post))
+{
+    <label>ID</label> @Html.TextBoxFor(r => r.Id, new { @class = "form-control", @readonly = "true" })
+    <br />
+    <label>Ingrese el nombre de la Compañía a modificar</label> @Html.TextBoxFor(r => r.CompanyName)
+    <br />
+    <input type="submit" class="btn btn-success" value="Guardar" />
+
+}
+
+

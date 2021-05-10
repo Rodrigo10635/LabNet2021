@@ -1,0 +1,17 @@
+﻿@model Practica_EF.MVC.Models.CustomersView
+
+@{
+    ViewBag.Title = "Customers Page";
+}
+
+<h1>Vista para Insertar</h1>
+
+@using (Html.BeginForm("Insert", "Customers", FormMethod.Post))
+{
+    <label>Ingrese el ID</label> @Html.TextBoxFor(r => r.Id, new { placeholder = "Ingresar Id de 5 digitos", @class = "form-input" })
+    <br />
+    <label>Ingrese el nombre de la Compañía</label> @Html.TextBoxFor(r => r.CompanyName)
+    <br />
+    <input type="submit" class="btn btn-success" value="Guardar" />
+
+}
