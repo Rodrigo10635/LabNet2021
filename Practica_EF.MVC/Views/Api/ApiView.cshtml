@@ -1,0 +1,19 @@
+﻿@model List<Practica_EF.MVC.Models.Calculator>
+@{
+    ViewBag.Title = "ApiView";
+}
+
+<h2>ApiView</h2>
+
+<table class="table">
+    @foreach (var calcu in Model)
+    {
+        <tr>
+            <th scope="row">@calcu.fname</th>
+            <th scope="row">@calcu.percentage</th>
+            <th scope="row">@calcu.result</th>
+            <th scope="row">@calcu.sname</th>
+        </tr>
+
+    }
+</table>
