@@ -1,0 +1,20 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label class="col-form-label">ID:</label>
+        <input formControlName="id" type="text" class="form-control">
+
+    </div>
+    <div class="form-group">
+        <label class="col-form-label">Company Name:</label>
+        <input formControlName="Company" type="text" class="form-control">
+        <small *ngIf="CompanyCtrl?.invalid && CompanyCtrl?.touched" class="text-danger">El nombre de la Company es requerido</small>
+    </div>
+    <div class="form-group">
+        <label class="col-form-label">Phone:</label>
+        <input formControlName="phone" type="text" class="form-control">
+
+    </div>
+
+    <button [disabled]="!form.valid" type="submit" class="btn btn-primary">Guardar</button>
+    <button type="button" class="btn btn-danger" (click)="onClickLimpiar()">Limpiar</button>
+</form>

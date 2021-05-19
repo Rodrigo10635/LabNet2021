@@ -1,0 +1,23 @@
+<h1>Shippers</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>COMPANY</th>
+            <th>PHONE</th>
+
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let ship of shippers">
+                <td>{{ship.ShipperID}}</td>
+                <td>{{ship.CompanyName}}</td>
+                <td>{{ship.Phone}}</td>
+                <button class="btn btn-warning" (click)="Delete(ship.ShipperID)">Eliminar</button>
+            </tr>
+        </tbody>
+
+
+    
+</table>
